@@ -31,7 +31,7 @@ jobs:
           distribution: zulu
           java-version: 17
       - uses: gradle/actions/setup-gradle@v4
-      - name: build
+      - name: build and test
         run: ./gradlew ${{ env.GRADLE_SWITCHES }} build test
       - name: verify
-        run: mvn --show-version --no-transfer-progress --update-snapshots --fail-at-end --batch-mode -Dstyle.color=always verify
+        run: ./gradlew ${{ env.GRADLE_SWITCHES }} check
