@@ -1,9 +1,9 @@
 ---
 type: specs.openrewrite.org/v1beta/recipe
 name: org.mockbukkit.rewrite.PackageRename
-displayName: Replace be.seeseemelk Package with org.mockbukkit package
+displayName: Replace be.seeseemelk.mockbukkit Package with org.mockbukkit.mockbukkit package
 recipeList:
   - org.openrewrite.java.ChangePackage:
-      oldPackageName: be.seeseemelk
-      newPackageName: org.mockbukkit
+      oldPackageName: be.seeseemelk.mockbukkit
+      newPackageName: org.mockbukkit.mockbukkit
 ...

@@ -5,300 +5,300 @@ displayName: Replace old mock names with new ones
 recipeList:
   # Rename Mock* to *Mock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.MockChunkData
-      newFullyQualifiedTypeName: org.mockbukkit.ChunkDataMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.MockChunkData
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.ChunkDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.MockChunkData
-      newFullyQualifiedTypeName: be.seeseemelk.ChunkDataMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.MockChunkData
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.ChunkDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.MockPlayerList
-      newFullyQualifiedTypeName: org.mockbukkit.PlayerListMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.MockPlayerList
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.PlayerListMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.MockPlayerList
-      newFullyQualifiedTypeName: be.seeseemelk.PlayerListMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.MockPlayerList
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.PlayerListMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.MockUnsafeValues
-      newFullyQualifiedTypeName: org.mockbukkit.UnsafeValuesMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.MockUnsafeValues
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.UnsafeValuesMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.MockUnsafeValues
-      newFullyQualifiedTypeName: be.seeseemelk.UnsafeValuesMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.MockUnsafeValues
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.UnsafeValuesMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.command.MockCommandMap
-      newFullyQualifiedTypeName: org.mockbukkit.command.CommandMapMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.command.MockCommandMap
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.command.CommandMapMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.command.MockCommandMap
-      newFullyQualifiedTypeName: be.seeseemelk.command.CommandMapMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.command.MockCommandMap
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.command.CommandMapMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.potion.MockPotionEffectType
-      newFullyQualifiedTypeName: org.mockbukkit.potion.PotionEffectTypeMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.potion.MockPotionEffectType
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.potion.PotionEffectTypeMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.potion.MockPotionEffectType
-      newFullyQualifiedTypeName: be.seeseemelk.potion.PotionEffectTypeMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.potion.MockPotionEffectType
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.potion.PotionEffectTypeMock
 
   # Rename all BlockData to include Data in the name
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.data.AmethystClusterMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.data.AmethystClusterDataMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.AmethystClusterMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.AmethystClusterDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.data.AmethystClusterMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.data.AmethystClusterDataMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.AmethystClusterMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.AmethystClusterDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.data.BedMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.data.BedDataMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.BedMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.BedDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.data.BedMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.data.BedDataMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.BedMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.BedDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.data.CampfireMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.data.CampfireDataMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.CampfireMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.CampfireDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.data.CampfireMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.data.CampfireDataMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.CampfireMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.CampfireDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.data.SlabMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.data.SlabDataMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.SlabMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.SlabDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.data.SlabMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.data.SlabDataMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.SlabMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.SlabDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.data.StairsMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.data.StairsDataMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.StairsMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.StairsDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.data.StairsMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.data.StairsDataMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.StairsMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.StairsDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.data.SwitchMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.data.SwitchDataMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.SwitchMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.SwitchDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.data.SwitchMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.data.SwitchDataMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.SwitchMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.SwitchDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.data.TrapDoorMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.data.TrapDoorDataMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.TrapDoorMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.TrapDoorDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.data.TrapDoorMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.data.TrapDoorDataMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.TrapDoorMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.TrapDoorDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.data.WallSignMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.data.WallSignDataMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.WallSignMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.WallSignDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.data.WallSignMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.data.WallSignDataMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.WallSignMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.WallSignDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.data.AmethystClusterMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.data.AmethystClusterDataMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.AmethystClusterMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.data.AmethystClusterDataMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.data.AmethystClusterMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.data.AmethystClusterDataMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.AmethystClusterMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.data.AmethystClusterDataMock
 
   # Rename all BlockState Mocks to include State in the name
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.AbstractFurnaceMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.AbstractFurnaceStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.AbstractFurnaceMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.AbstractFurnaceStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.AbstractFurnaceMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.AbstractFurnaceStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.AbstractFurnaceMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.AbstractFurnaceStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.BannerMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.BannerStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BannerMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BannerStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.BannerMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.BannerStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BannerMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BannerStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.BarrelMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.BarrelStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BarrelMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BarrelStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.BarrelMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.BarrelStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BarrelMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BarrelStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.BeaconMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.BeaconStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BeaconMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BeaconStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.BeaconMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.BeaconStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BeaconMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BeaconStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.BedMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.BedStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BedMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BedStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.BedMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.BedStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BedMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BedStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.BeehiveMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.BeehiveStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BeehiveMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BeehiveStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.BeehiveMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.BeehiveStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BeehiveMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BeehiveStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.BellMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.BellStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BellMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BellStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.BellMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.BellStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BellMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BellStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.BlastFurnaceMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.BlastFurnaceStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BlastFurnaceMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BlastFurnaceStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.BlastFurnaceMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.BlastFurnaceStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BlastFurnaceMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BlastFurnaceStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.BrewingStandMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.BrewingStandStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BrewingStandMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BrewingStandStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.BrewingStandMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.BrewingStandStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BrewingStandMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BrewingStandStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.CampfireMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.CampfireStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.CampfireMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.CampfireStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.CampfireMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.CampfireStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.CampfireMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.CampfireStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.ChestMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.ChestStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.ChestMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.ChestStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.ChestMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.ChestStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.ChestMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.ChestStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.CommandBlockMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.CommandBlockStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.CommandBlockMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.CommandBlockStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.CommandBlockMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.CommandBlockStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.CommandBlockMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.CommandBlockStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.ComparatorMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.ComparatorStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.ComparatorMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.ComparatorStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.ComparatorMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.ComparatorStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.ComparatorMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.ComparatorStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.ConduitMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.ConduitStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.ConduitMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.ConduitStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.ConduitMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.ConduitStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.ConduitMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.ConduitStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.ContainerMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.ContainerStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.ContainerMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.ContainerStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.ContainerMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.ContainerStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.ContainerMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.ContainerStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.CreatureSpawnerMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.CreatureSpawnerStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.CreatureSpawnerMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.CreatureSpawnerStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.CreatureSpawnerMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.CreatureSpawnerStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.CreatureSpawnerMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.CreatureSpawnerStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.DaylightDetectorMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.DaylightDetectorStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.DaylightDetectorMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.DaylightDetectorStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.DaylightDetectorMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.DaylightDetectorStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.DaylightDetectorMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.DaylightDetectorStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.DispenserMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.DispenserStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.DispenserMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.DispenserStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.DispenserMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.DispenserStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.DispenserMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.DispenserStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.DropperMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.DropperStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.DropperMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.DropperStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.DropperMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.DropperStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.DropperMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.DropperStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.EnchantingTableMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.EnchantingTableStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.EnchantingTableMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.EnchantingTableStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.EnchantingTableMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.EnchantingTableStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.EnchantingTableMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.EnchantingTableStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.EndGatewayMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.EndGatewayStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.EndGatewayMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.EndGatewayStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.EndGatewayMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.EndGatewayStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.EndGatewayMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.EndGatewayStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.EnderChestMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.EnderChestStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.EnderChestMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.EnderChestStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.EnderChestMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.EnderChestStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.EnderChestMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.EnderChestStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.HopperMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.HopperStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.HopperMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.HopperStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.HopperMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.HopperStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.HopperMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.HopperStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.JigsawMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.JigsawStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.JigsawMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.JigsawStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.JigsawMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.JigsawStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.JigsawMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.JigsawStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.JukeboxMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.JukeboxStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.JukeboxMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.JukeboxStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.JukeboxMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.JukeboxStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.JukeboxMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.JukeboxStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.LecternMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.LecternStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.LecternMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.LecternStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.LecternMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.LecternStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.LecternMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.LecternStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.SculkCatalystMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.SculkCatalystStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.SculkCatalystMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.SculkCatalystStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.SculkCatalystMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.SculkCatalystStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.SculkCatalystMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.SculkCatalystStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.SculkSensorMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.SculkSensorStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.SculkSensorMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.SculkSensorStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.SculkSensorMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.SculkSensorStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.SculkSensorMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.SculkSensorStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.SculkShriekerMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.SculkShriekerStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.SculkShriekerMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.SculkShriekerStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.SculkShriekerMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.SculkShriekerStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.SculkShriekerMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.SculkShriekerStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.ShulkerBoxMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.ShulkerBoxStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.ShulkerBoxMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.ShulkerBoxStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.ShulkerBoxMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.ShulkerBoxStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.ShulkerBoxMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.ShulkerBoxStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.SignMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.SignStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.SignMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.SignStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.SignMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.SignStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.SignMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.SignStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.SkullMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.SkullStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.SkullMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.SkullStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.SkullMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.SkullStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.SkullMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.SkullStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.SmokerMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.SmokerStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.SmokerMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.SmokerStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.SmokerMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.SmokerStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.SmokerMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.SmokerStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.StructureMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.StructureStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.StructureMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.StructureStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.StructureMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.StructureStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.StructureMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.StructureStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: org.mockbukkit.block.state.BedMock
-      newFullyQualifiedTypeName: org.mockbukkit.block.state.BedStateMock
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BedMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.block.state.BedStateMock
   - org.openrewrite.java.ChangeType:
-      oldFullyQualifiedTypeName: be.seeseemelk.block.state.BedMock
-      newFullyQualifiedTypeName: be.seeseemelk.block.state.BedStateMock
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BedMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BedStateMock
