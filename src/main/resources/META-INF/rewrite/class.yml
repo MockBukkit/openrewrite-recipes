@@ -6,10 +6,10 @@ recipeList:
   # Rename Mock* to *Mock
   - org.openrewrite.java.ChangeType:
       oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.MockChunkData
-      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.ChunkDataMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.world.ChunkDataMock
   - org.openrewrite.java.ChangeType:
       oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.MockChunkData
-      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.ChunkDataMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.world.ChunkDataMock
   - org.openrewrite.java.ChangeType:
       oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.MockPlayerList
       newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.PlayerListMock
@@ -17,11 +17,17 @@ recipeList:
       oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.MockPlayerList
       newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.PlayerListMock
   - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.MockPlugin
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.plugin.PluginMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.MockPlugin
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.plugin.PluginMock
+  - org.openrewrite.java.ChangeType:
       oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.MockUnsafeValues
-      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.UnsafeValuesMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.util.UnsafeValuesMock
   - org.openrewrite.java.ChangeType:
       oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.MockUnsafeValues
-      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.UnsafeValuesMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.util.UnsafeValuesMock
   - org.openrewrite.java.ChangeType:
       oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.command.MockCommandMap
       newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.command.CommandMapMock
@@ -302,3 +308,77 @@ recipeList:
   - org.openrewrite.java.ChangeType:
       oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BedMock
       newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.block.state.BedStateMock
+
+  # Move some classes from the root package to sub-packages
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.GameEventMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.event.GameEventMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.GameEventMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.event.GameEventMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.RaidMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.event.RaidMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.RaidMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.event.RaidMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.PermisisonManagerMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.plugin.PermissionManagerMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.PermisisonManagerMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.plugin.PermissionManagerMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.RegistryMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.registry.RegistryMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.RegistryMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.registry.RegistryMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.JukeboxSongMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.sound.JukeboxSongMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.JukeboxSongMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.sound.JukeboxSongMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.MusicInstrumentMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.sound.MusicInstrumentMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.MusicInstrumentMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.sound.MusicInstrumentMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.WorldBorderMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.world.WorldBorderMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.WorldBorderMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.world.WorldBorderMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.WorldMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.world.WorldMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.WorldMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.world.WorldMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.ChunkMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.world.ChunkMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.ChunkMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.world.ChunkMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.ChunkSnapshotMock
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.world.ChunkSnapshotMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.ChunkSnapshotMock
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.world.ChunkSnapshotMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.ChunkCoordinate
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.world.ChunkCoordinate
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.ChunkCoordinate
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.world.ChunkCoordinate
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.mockbukkit.mockbukkit.Coordinate
+      newFullyQualifiedTypeName: org.mockbukkit.mockbukkit.world.Coordinate
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: be.seeseemelk.mockbukkit.Coordinate
+      newFullyQualifiedTypeName: be.seeseemelk.mockbukkit.world.Coordinate
