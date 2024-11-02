@@ -1,10 +1,8 @@
 plugins {
     id("org.openrewrite.build.recipe-library-base") version "latest.release"
 
-    // This uses the nexus publishing plugin to publish to the moderne-dev repository
-    // Remove it if you prefer to publish by other means, such as the maven-publish plugin
-    id("org.openrewrite.build.publish") version "latest.release"
-    id("nebula.release") version "latest.release"
+    id("maven-publish")
+    id("io.github.gradle-nexus.publish-plugin") version "2.0.0"
 
     // Configures artifact repositories used for dependency resolution to include maven central and nexus snapshots.
     // If you are operating in an environment where public repositories are not accessible, we recommend using a
@@ -16,8 +14,7 @@ plugins {
     id("org.openrewrite.rewrite") version "latest.release"
 }
 
-// Set as appropriate for your organization
-group = "org.mockbukkit"
+group = "org.mockbukkit.rewrite"
 description = "Rewrite recipes for Mockbukkit 4.0"
 
 dependencies {
@@ -40,29 +37,46 @@ dependencies {
     rewrite("org.openrewrite.recipe:rewrite-recommendations:latest.release")
 }
 
-signing {
-    // To enable signing have your CI workflow set the "signingKey" and "signingPassword" Gradle project properties
-    isRequired = false
-}
-
-// Use maven-style "SNAPSHOT" versioning for non-release builds
-configure<nebula.plugin.release.git.base.ReleasePluginExtension> {
-    defaultVersionStrategy = nebula.plugin.release.NetflixOssStrategies.SNAPSHOT(project)
-}
-
-configure<PublishingExtension> {
-    publications {
-        named("nebula", MavenPublication::class.java) {
-            suppressPomMetadataWarningsFor("runtimeElements")
+nexusPublishing {
+    this.repositories {
+        sonatype {
+            username.set(findProperty("OSSRH_USERNAME") as String?)
+            password.set(findProperty("OSSRH_PASSWORD") as String?)
         }
     }
 }
 
 publishing {
-  repositories {
-      maven {
-          name = "moderne"
-          url = uri("https://us-west1-maven.pkg.dev/moderne-dev/moderne-recipe")
-      }
-  }
+    publications {
+        create<MavenPublication>("maven") {
+            artifactId = "openrewrite-recipes"
+            from(components.getByName("java"))
+            pom {
+                description.set("A set of OpenRewrite recipes designed to help developers refactor projects that use MockBukkit.")
+                url.set("https://github.com/MockBukkit/openrewrite-recipes")
+                scm {
+                    connection.set("scm:git:git://github.com/MockBukkit/openrewrite-recipes.git")
+                    developerConnection.set("scm:git:ssh://github.com:MockBukkit/openrewrite-recipes.git")
+                    url.set("https://github.com/MockBukkit/openrewrite-recipes")
+                }
+                licenses {
+                    license {
+                        name.set("MIT License")
+                        url.set("https://raw.githubusercontent.com/MockBukkit/openrewrite-recipes/refs/heads/main/LICENSE")
+                    }
+                }
+                developers {
+                    developer {
+                        id.set("thelooter")
+                        name.set("Eve Kolb")
+                    }
+                    developer {
+                        id.set("thorinwasher")
+                        name.set("Hjalmar Gunnarsson")
+                        email.set("officialhjalmar.gunnarsson@outlook.com")
+                    }
+                }
+            }
+        }
+    }
 }
