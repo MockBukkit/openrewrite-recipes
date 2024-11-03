@@ -3,6 +3,7 @@ plugins {
 
     id("maven-publish")
     id("io.github.gradle-nexus.publish-plugin") version "2.0.0"
+    id("signing")
 
     // Configures artifact repositories used for dependency resolution to include maven central and nexus snapshots.
     // If you are operating in an environment where public repositories are not accessible, we recommend using a
@@ -35,6 +36,10 @@ dependencies {
 
     // Contains the OpenRewriteBestPractices recipe, which you can apply to your recipes
     rewrite("org.openrewrite.recipe:rewrite-recommendations:latest.release")
+}
+
+signing {
+    sign(publishing.publications)
 }
 
 nexusPublishing {
