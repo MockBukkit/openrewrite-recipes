@@ -40,7 +40,7 @@ For **Maven**:
       <!--Add the Mockbukkit recipes-->
       <dependencies>
          <dependency>
-            <groupId>org.mockbukkit</groupId>
+            <groupId>org.mockbukkit.rewrite</groupId>
             <artifactId>rewrite-recipes</artifactId>
             <version>1.0.0</version>
          </dependency>
@@ -60,7 +60,7 @@ plugins {
 
 dependencies {
    // Add the Mockbukkit recipes
-   rewrite("org.mockbukkit:rewrite-recipes:1.0.0")
+   rewrite("org.mockbukkit.rewrite:rewrite-recipes:1.0.0")
 }
 
 // Add the recipe source to your project’s rewrite configuration
@@ -78,7 +78,7 @@ plugins {
 
 dependencies {
    // Add the Mockbukkit recipes
-   rewrite("org.mockbukkit:rewrite-recipes:1.0.0")
+   rewrite("org.mockbukkit.rewrite:rewrite-recipes:1.0.0")
 }
 
 // Add the recipe source to your project’s rewrite configuration
