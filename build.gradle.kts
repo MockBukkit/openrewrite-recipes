@@ -16,6 +16,7 @@ plugins {
 }
 
 group = "org.mockbukkit.rewrite"
+version = System.getenv("REWRITE_VERSION") ?: "dev"
 description = "Rewrite recipes for Mockbukkit 4.0"
 
 dependencies {
@@ -45,8 +46,8 @@ signing {
 nexusPublishing {
     this.repositories {
         sonatype {
-            username.set(findProperty("OSSRH_USERNAME") as String?)
-            password.set(findProperty("OSSRH_PASSWORD") as String?)
+            username.set(System.getenv("OSSRH_USERNAME"))
+            password.set(System.getenv("OSSRH_PASSWORD"))
         }
     }
 }

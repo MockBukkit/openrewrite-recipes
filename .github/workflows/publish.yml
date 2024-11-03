@@ -1,0 +1,39 @@
+name: Publish package to the Maven Central Repository
+on:
+  release:
+    types: [published]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'zulu'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
+
+      - name: Store Private key
+        uses: DamianReeves/write-file-action@v1.3
+        with:
+          path: private.key
+          contents: ${{ secrets.PRIV_KEY }}
+          write-mode: overwrite
+
+      - name: Publish package
+        run: |
+          gpg --batch --import private.key
+          gpg --batch --export-secret-keys --passphrase $KEY_PASSPHRASE "Hjalmar Gunnarsson <officialhjalmar.gunnarsson@outlook.com>" > private.gpg
+          ./gradlew publishToSonatype closeAndReleaseSonatypeStagingRepository \
+            -Psigning.secretKeyRingFile=private.gpg
+            -psigning.keyName=$KEY_NAME
+            -Psigning.password=$KEY_PASSPHRASE
+        env:
+          OSSRH_USERNAME: ${{ secrets.OSSRH_USERNAME }}
+          OSSRH_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
+          KEY_PASSPHRASE: ${{ secrets.KEY_PASS }}
+          KEY_NAME: ${{ secrets.KEY_NAME }}
+          REWRITE_VERSION: ${{ github.event.release.tag_name }}
