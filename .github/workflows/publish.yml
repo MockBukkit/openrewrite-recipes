@@ -25,6 +25,10 @@ jobs:
 
       - name: Publish package
         run: |
+          mkdir -p $HOME/.gnupg
+          echo use-agent >> $HOME/.gnupg/gpg.conf
+          echo pinentry-mode loopback >> $HOME/.gnupg/gpg.conf
+          echo allow-loopback-pinentry >> $HOME/.gnupg/gpg-agent.conf
           gpg --batch --import private.key
           gpg --batch --export-secret-keys --passphrase $KEY_PASSPHRASE "Hjalmar Gunnarsson <officialhjalmar.gunnarsson@outlook.com>" > private.gpg
           ./gradlew publishToSonatype closeAndReleaseSonatypeStagingRepository \
