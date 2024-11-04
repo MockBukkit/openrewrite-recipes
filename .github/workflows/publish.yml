@@ -16,28 +16,11 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
 
-      - name: Store Private key
-        uses: DamianReeves/write-file-action@v1.3
-        with:
-          path: private.key
-          contents: ${{ secrets.PRIV_KEY }}
-          write-mode: overwrite
-
       - name: Publish package
-        run: |
-          mkdir -p $HOME/.gnupg
-          echo use-agent >> $HOME/.gnupg/gpg.conf
-          echo pinentry-mode loopback >> $HOME/.gnupg/gpg.conf
-          echo allow-loopback-pinentry >> $HOME/.gnupg/gpg-agent.conf
-          gpg --batch --import private.key
-          gpg --batch --export-secret-keys --passphrase $KEY_PASSPHRASE "Hjalmar Gunnarsson <officialhjalmar.gunnarsson@outlook.com>" > private.gpg
-          ./gradlew publishToSonatype closeAndReleaseSonatypeStagingRepository \
-            -Psigning.secretKeyRingFile=private.gpg
-            -psigning.keyName=$KEY_NAME
-            -Psigning.password=$KEY_PASSPHRASE
+        run: ./gradlew publishAndReleaseToMavenCentral --no-configuration-cache
         env:
-          OSSRH_USERNAME: ${{ secrets.OSSRH_USERNAME }}
-          OSSRH_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
-          KEY_PASSPHRASE: ${{ secrets.KEY_PASS }}
-          KEY_NAME: ${{ secrets.KEY_NAME }}
+          ORG_GRADLE_PROJECT_mavenCentralUsername: ${{ secrets.OSSRH_USERNAME }}
+          ORG_GRADLE_PROJECT_mavenCentralPassword: ${{ secrets.OSSRH_TOKEN }}
+          ORG_GRADLE_PROJECT_signingInMemoryKeyPassword: ${{ secrets.KEY_PASS }}
+          ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.PRIV_KEY }}
           REWRITE_VERSION: ${{ github.event.release.tag_name }}
