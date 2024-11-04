@@ -16,7 +16,7 @@ plugins {
 }
 
 group = "org.mockbukkit.rewrite"
-version = System.getenv("REWRITE_VERSION") ?: "dev"
+version = rewriteVersion()
 description = "Rewrite recipes for Mockbukkit 4.0"
 
 dependencies {
@@ -75,6 +75,7 @@ publishing {
                     developer {
                         id.set("thelooter")
                         name.set("Eve Kolb")
+                        email.set("me@thelooter.de")
                     }
                     developer {
                         id.set("thorinwasher")
@@ -86,3 +87,8 @@ publishing {
         }
     }
 }
+val backupVersion = "1.0.0"
+
+fun rewriteVersion(): String = System.getenv("REWRITE_VERSION")
+    ?.let { it + (System.getenv("CI")?.let { "" } ?: "-dev") }
+    ?: (backupVersion + (System.getenv("CI")?.let { "" } ?: "-dev"))
