@@ -33,7 +33,7 @@ dependencies {
 
 
     // Need to have a slf4j binding to see any output enabled from the parser.
-    runtimeOnly("ch.qos.logback:logback-classic:1.2.+")
+    runtimeOnly("ch.qos.logback:logback-classic:1.5.12")
 
     // Contains the OpenRewriteBestPractices recipe, which you can apply to your recipes
     rewrite("org.openrewrite.recipe:rewrite-recommendations:latest.release")
