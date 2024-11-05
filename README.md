@@ -1,3 +1,9 @@
+<p align="center">
+   <a href="https://central.sonatype.com/artifact/org.mockbukkit.rewrite/openrewrite-recipes">
+      <img alt="Maven Central" src="https://img.shields.io/maven-central/v/org.mockbukkit.rewrite/openrewrite-recipes?color=1bcc94&logo=apache-maven" />
+   </a>
+</p>
+
 # OpenRewrite Recipes for MockBukkit Refactoring
 
 This repository contains a set of OpenRewrite recipes designed to help developers refactor projects that use [MockBukkit](https://github.com/Mockbukkit/MockBukkit). OpenRewrite enables automatic refactoring, making it easier to update code, enforce standards, and introduce best practices consistently.
