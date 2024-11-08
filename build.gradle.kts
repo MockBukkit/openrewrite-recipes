@@ -70,7 +70,9 @@ mavenPublishing {
             url.set("https://github.com/MockBukkit/openrewrite-recipes")
         }
     }
-    signAllPublications()
+    if (!project.gradle.startParameter.taskNames.any { it.contains("publishToMavenLocal") }) {
+        signAllPublications()
+    }
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
 }
 

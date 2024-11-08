@@ -6,4 +6,5 @@ recipeList:
   - org.openrewrite.java.ChangePackage:
       oldPackageName: be.seeseemelk.mockbukkit
       newPackageName: org.mockbukkit.mockbukkit
+      recursive: true
 ...
