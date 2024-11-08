@@ -47,8 +47,8 @@ For **Maven**:
       <dependencies>
          <dependency>
             <groupId>org.mockbukkit.rewrite</groupId>
-            <artifactId>rewrite-recipes</artifactId>
-            <version>1.0.0</version>
+            <artifactId>openrewrite-recipes</artifactId>
+            <version>1.0.2</version>
          </dependency>
       </dependencies>
    </plugin>
@@ -66,7 +66,7 @@ plugins {
 
 dependencies {
    // Add the Mockbukkit recipes
-   rewrite("org.mockbukkit.rewrite:rewrite-recipes:1.0.0")
+   rewrite("org.mockbukkit.rewrite:openrewrite-recipes:1.0.2")
 }
 
 // Add the recipe source to your project’s rewrite configuration
@@ -84,7 +84,7 @@ plugins {
 
 dependencies {
    // Add the Mockbukkit recipes
-   rewrite("org.mockbukkit.rewrite:rewrite-recipes:1.0.0")
+   rewrite("org.mockbukkit.rewrite:openrewrite-recipes:1.0.2")
 }
 
 // Add the recipe source to your project’s rewrite configuration
